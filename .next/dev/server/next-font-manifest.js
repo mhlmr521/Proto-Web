@@ -1,0 +1,1 @@
+self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/Users/tianzihao/CodeBuddy/Protofolio/app/layout\":[\"static/media/e4af272ccee01ff0-s.p.woff2\",\"static/media/162bf645eb375add-s.p.ttf\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"

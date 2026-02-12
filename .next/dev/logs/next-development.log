@@ -1,0 +1,746 @@
+[00:00:04.210] Server  LOG     Contentlayer config change detected. Updating type definitions and data...
+[00:00:04.432] Server  LOG     Generated 20 documents in .contentlayer
+[00:00:16.403] Server  LOG     ✓ Ready in 16.1s
+[00:00:19.503] Server  LOG     ○ Compiling /projects/[slug] ...
+[00:00:45.660] Server  WARN    [Upstash Redis] Unable to find environment variable: `UPSTASH_REDIS_REST_URL`
+[00:00:45.661] Server  WARN    [Upstash Redis] Unable to find environment variable: `UPSTASH_REDIS_REST_TOKEN`
+[00:00:45.661] Server  WARN    [Upstash Redis] The 'url' property is missing or undefined in your Redis config.
+[00:00:45.661] Server  WARN    [Upstash Redis] The 'token' property is missing or undefined in your Redis config.
+[00:00:45.686] Server  ERROR   MDX compilation error: SyntaxError: Unexpected token 'var'
+[00:00:46.804] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:47.382] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/projects/..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <RootLayout>
+                        <html
+                          lang="en"
++                         className="__variable_f367f3 __variable_829c8b"
+-                         className="__variable_f367f3 __variable_829c8b hb-loaded"
+-                         data-hb-chrome-ext-installed="2.0.28"
+-                         style={{--neonlingo-mark-bg:"#fce1854d",--neonlingo-mark-border:"#c50aff", ...}}
+                        >
+                          <head>
+                          <body
+                            className="bg-black debug-screens"
+-                           huaban_pin_injected="true"
+                          >
+                  ...
+
+[00:00:48.613] Server  ERROR   [Upstash Redis] Unable to find environment variable: `UPSTASH_REDIS_REST_URL`
+[00:00:48.613] Server  ERROR   [Upstash Redis] Unable to find environment variable: `UPSTASH_REDIS_REST_TOKEN`
+[00:00:48.613] Server  ERROR   [Upstash Redis] The 'url' property is missing or undefined in your Redis config.
+[00:00:48.613] Server  ERROR   [Upstash Redis] The 'token' property is missing or undefined in your Redis config.
+[00:00:48.664] Server  ERROR   [Upstash Redis] Redis client was initialized without url or token. Failed to execute command.
+[00:00:53.031] Server  ERROR   ⨯ TypeError: Failed to parse URL from /pipeline
+[00:00:53.039] Server  ERROR   ⨯ TypeError: Failed to parse URL from /pipeline
+[00:00:56.057] Server  LOG     ○ Compiling /_error ...
+[00:01:01.935] Server  WARN    [Upstash Redis] Unable to find environment variable: `UPSTASH_REDIS_REST_URL`
+[00:01:01.935] Server  WARN    [Upstash Redis] Unable to find environment variable: `UPSTASH_REDIS_REST_TOKEN`
+[00:01:01.935] Server  WARN    [Upstash Redis] The 'url' property is missing or undefined in your Redis config.
+[00:01:01.935] Server  WARN    [Upstash Redis] The 'token' property is missing or undefined in your Redis config.
+[00:01:01.941] Server  ERROR   MDX compilation error: SyntaxError: Unexpected token 'var'
+[00:01:02.055] Server  ERROR   MDX compilation error: SyntaxError: Unexpected token 'var'
+[00:01:02.104] Server  ERROR   MDX compilation error: SyntaxError: Unexpected token 'var'
+[00:22:30.156] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:22:30.283] Browser LOG     [CodeBuddy] electronAPI not available, continuing with postMessage
+[00:22:30.283] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:23:00.331] Server  LOG     ○ Compiling /projects ...
+[00:23:01.129] Browser WARN    [Upstash Redis] Unable to find environment variable: `UPSTASH_REDIS_REST_URL`
+[00:23:01.129] Browser WARN    [Upstash Redis] Unable to find environment variable: `UPSTASH_REDIS_REST_TOKEN`
+[00:23:01.129] Browser WARN    [Upstash Redis] The 'url' property is missing or undefined in your Redis config.
+[00:23:01.129] Browser WARN    [Upstash Redis] The 'token' property is missing or undefined in your Redis config.
+[00:23:01.129] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:23:14.019] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:23:18.568] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:25:00.825] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:25:10.583] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:25:13.933] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:25:17.788] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:25:25.656] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:25:35.995] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:25:36.854] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:25:46.590] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:25:52.063] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:26:01.994] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:28:01.126] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:28:04.851] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:28:55.119] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:28:55.234] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:28:55.234] Browser LOG     [CodeBuddy] electronAPI not available, continuing with postMessage
+[00:28:55.234] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:29:03.855] Server  WARN    ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:29:04.667] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:29:04.779] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:29:04.779] Browser LOG     [CodeBuddy] electronAPI not available, continuing with postMessage
+[00:29:04.779] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:29:07.362] Server  WARN    ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:29:08.846] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:29:08.960] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:29:08.960] Browser LOG     [CodeBuddy] electronAPI not available, continuing with postMessage
+[00:29:08.960] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:30:03.583] Server  ERROR   ⨯ ReferenceError: LanguageProvider is not defined
+[00:30:03.721] Browser ERROR   uncaughtError: ReferenceError: LanguageProvider is not defined
+[00:30:03.721] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:30:06.936] Server  ERROR   ⨯ Error: useLanguage must be used within a LanguageProvider
+[00:30:07.680] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:30:07.804] Browser ERROR   uncaughtError: Error: useLanguage must be used within a LanguageProvider
+[00:30:07.804] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:30:07.804] Browser LOG     [CodeBuddy] electronAPI not available, continuing with postMessage
+[00:30:12.522] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:30:13.385] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:30:13.905] Server  ERROR   ⨯ ReferenceError: t is not defined
+[00:30:14.547] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:30:14.659] Browser ERROR   uncaughtError: ReferenceError: t is not defined
+[00:30:14.659] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:30:14.659] Browser LOG     [CodeBuddy] electronAPI not available, continuing with postMessage
+[00:30:21.306] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:30:21.420] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:30:21.420] Browser LOG     [CodeBuddy] electronAPI not available, continuing with postMessage
+[00:30:21.420] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:30:33.736] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:30:39.104] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:30:47.383] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:30:56.184] Browser ERROR   ./app/components/nav.tsx
+Error:   x You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/tianzihao/CodeBuddy/Protofolio/app/components/nav.tsx:3:1]
+ 1 | import { ArrowLeft } from "lucide-react";
+ 2 | import Link from "next/link";
+ 3 | import React, { useEffect, useRef, useState } from "react";
+   :                 ^^^^^^^^^
+ 4 | 
+ 5 | export const Navigation: React.FC = () => {
+ 6 |     const ref = useRef<HTMLElement>(null);
+   `----
+  x You're importing a component that needs `useRef`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/tianzihao/CodeBuddy/Protofolio/app/components/nav.tsx:3:1]
+ 1 | import { ArrowLeft } from "lucide-react";
+ 2 | import Link from "next/link";
+ 3 | import React, { useEffect, useRef, useState } from "react";
+   :                            ^^^^^^
+ 4 | 
+ 5 | export const Navigation: React.FC = () => {
+ 6 |     const ref = useRef<HTMLElement>(null);
+   `----
+  x You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/tianzihao/CodeBuddy/Protofolio/app/components/nav.tsx:3:1]
+ 1 | import { ArrowLeft } from "lucide-react";
+ 2 | import Link from "next/link";
+ 3 | import React, { useEffect, useRef, useState } from "react";
+   :                                    ^^^^^^^^
+ 4 | 
+ 5 | export const Navigation: React.FC = () => {
+ 6 |     const ref = useRef<HTMLElement>(null);
+   `----
+
+Import trace for requested module:
+./app/components/nav.tsx
+./app/contact/page.tsx
+[00:30:56.191] Server  ERROR   ⨯ ./app/components/nav.tsx
+Error:   x You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/tianzihao/CodeBuddy/Protofolio/app/components/nav.tsx:3:1]
+ 1 | import { ArrowLeft } from "lucide-react";
+ 2 | import Link from "next/link";
+ 3 | import React, { useEffect, useRef, useState } from "react";
+   :                 ^^^^^^^^^
+ 4 | 
+ 5 | export const Navigation: React.FC = () => {
+ 6 |     const ref = useRef<HTMLElement>(null);
+   `----
+  x You're importing a component that needs `useRef`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/tianzihao/CodeBuddy/Protofolio/app/components/nav.tsx:3:1]
+ 1 | import { ArrowLeft } from "lucide-react";
+ 2 | import Link from "next/link";
+ 3 | import React, { useEffect, useRef, useState } from "react";
+   :                            ^^^^^^
+ 4 | 
+ 5 | export const Navigation: React.FC = () => {
+ 6 |     const ref = useRef<HTMLElement>(null);
+   `----
+  x You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/tianzihao/CodeBuddy/Protofolio/app/components/nav.tsx:3:1]
+ 1 | import { ArrowLeft } from "lucide-react";
+ 2 | import Link from "next/link";
+ 3 | import React, { useEffect, useRef, useState } from "react";
+   :                                    ^^^^^^^^
+ 4 | 
+ 5 | export const Navigation: React.FC = () => {
+ 6 |     const ref = useRef<HTMLElement>(null);
+   `----
+
+Import trace for requested module:
+./app/components/nav.tsx
+./app/contact/page.tsx
+[00:31:00.163] Browser ERROR   uncaughtError: ModuleBuildError: Module build failed (from ./node_modules/.pnpm/next@16.1.6_@opentelemetry+api@1.4.1_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   x You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/tianzihao/CodeBuddy/Protofolio/app/components/nav.tsx:3:1]
+ 1 | import { ArrowLeft } from "lucide-react";
+ 2 | import Link from "next/link";
+ 3 | import React, { useEffect, useRef, useState } from "react";
+   :                 ^^^^^^^^^
+ 4 | 
+ 5 | export const Navigation: React.FC = () => {
+ 6 |     const ref = useRef<HTMLElement>(null);
+   `----
+  x You're importing a component that needs `useRef`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/tianzihao/CodeBuddy/Protofolio/app/components/nav.tsx:3:1]
+ 1 | import { ArrowLeft } from "lucide-react";
+ 2 | import Link from "next/link";
+ 3 | import React, { useEffect, useRef, useState } from "react";
+   :                            ^^^^^^
+ 4 | 
+ 5 | export const Navigation: React.FC = () => {
+ 6 |     const ref = useRef<HTMLElement>(null);
+   `----
+  x You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/tianzihao/CodeBuddy/Protofolio/app/components/nav.tsx:3:1]
+ 1 | import { ArrowLeft } from "lucide-react";
+ 2 | import Link from "next/link";
+ 3 | import React, { useEffect, useRef, useState } from "react";
+   :                                    ^^^^^^^^
+ 4 | 
+ 5 | export const Navigation: React.FC = () => {
+ 6 |     const ref = useRef<HTMLElement>(null);
+   `----
+
+[00:31:00.163] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:31:00.265] Browser LOG     [CodeBuddy] electronAPI not available, continuing with postMessage
+[00:31:00.265] Browser ERROR   ./app/components/nav.tsx
+Error:   x You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/tianzihao/CodeBuddy/Protofolio/app/components/nav.tsx:3:1]
+ 1 | import { ArrowLeft } from "lucide-react";
+ 2 | import Link from "next/link";
+ 3 | import React, { useEffect, useRef, useState } from "react";
+   :                 ^^^^^^^^^
+ 4 | 
+ 5 | export const Navigation: React.FC = () => {
+ 6 |     const ref = useRef<HTMLElement>(null);
+   `----
+  x You're importing a component that needs `useRef`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/tianzihao/CodeBuddy/Protofolio/app/components/nav.tsx:3:1]
+ 1 | import { ArrowLeft } from "lucide-react";
+ 2 | import Link from "next/link";
+ 3 | import React, { useEffect, useRef, useState } from "react";
+   :                            ^^^^^^
+ 4 | 
+ 5 | export const Navigation: React.FC = () => {
+ 6 |     const ref = useRef<HTMLElement>(null);
+   `----
+  x You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/tianzihao/CodeBuddy/Protofolio/app/components/nav.tsx:3:1]
+ 1 | import { ArrowLeft } from "lucide-react";
+ 2 | import Link from "next/link";
+ 3 | import React, { useEffect, useRef, useState } from "react";
+   :                                    ^^^^^^^^
+ 4 | 
+ 5 | export const Navigation: React.FC = () => {
+ 6 |     const ref = useRef<HTMLElement>(null);
+   `----
+[00:31:00.265] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:31:01.873] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:31:02.455] Browser ERROR   ./app/components/nav.tsx
+Error:   x You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/tianzihao/CodeBuddy/Protofolio/app/components/nav.tsx:3:1]
+ 1 | import { ArrowLeft } from "lucide-react";
+ 2 | import Link from "next/link";
+ 3 | import React, { useEffect, useRef, useState } from "react";
+   :                 ^^^^^^^^^
+ 4 | 
+ 5 | export const Navigation: React.FC = () => {
+ 6 |     const ref = useRef<HTMLElement>(null);
+   `----
+  x You're importing a component that needs `useRef`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/tianzihao/CodeBuddy/Protofolio/app/components/nav.tsx:3:1]
+ 1 | import { ArrowLeft } from "lucide-react";
+ 2 | import Link from "next/link";
+ 3 | import React, { useEffect, useRef, useState } from "react";
+   :                            ^^^^^^
+ 4 | 
+ 5 | export const Navigation: React.FC = () => {
+ 6 |     const ref = useRef<HTMLElement>(null);
+   `----
+  x You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/tianzihao/CodeBuddy/Protofolio/app/components/nav.tsx:3:1]
+ 1 | import { ArrowLeft } from "lucide-react";
+ 2 | import Link from "next/link";
+ 3 | import React, { useEffect, useRef, useState } from "react";
+   :                                    ^^^^^^^^
+ 4 | 
+ 5 | export const Navigation: React.FC = () => {
+ 6 |     const ref = useRef<HTMLElement>(null);
+   `----
+
+Import trace for requested module:
+./app/components/nav.tsx
+./app/contact/page.tsx
+[00:31:02.476] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:31:02.652] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:31:02.719] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:31:02.862] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:31:03.107] Browser ERROR   ./app/components/nav.tsx
+Error:   x You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/tianzihao/CodeBuddy/Protofolio/app/components/nav.tsx:3:1]
+ 1 | import { ArrowLeft } from "lucide-react";
+ 2 | import Link from "next/link";
+ 3 | import React, { useEffect, useRef, useState } from "react";
+   :                 ^^^^^^^^^
+ 4 | 
+ 5 | export const Navigation: React.FC = () => {
+ 6 |     const ref = useRef<HTMLElement>(null);
+   `----
+  x You're importing a component that needs `useRef`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/tianzihao/CodeBuddy/Protofolio/app/components/nav.tsx:3:1]
+ 1 | import { ArrowLeft } from "lucide-react";
+ 2 | import Link from "next/link";
+ 3 | import React, { useEffect, useRef, useState } from "react";
+   :                            ^^^^^^
+ 4 | 
+ 5 | export const Navigation: React.FC = () => {
+ 6 |     const ref = useRef<HTMLElement>(null);
+   `----
+  x You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/tianzihao/CodeBuddy/Protofolio/app/components/nav.tsx:3:1]
+ 1 | import { ArrowLeft } from "lucide-react";
+ 2 | import Link from "next/link";
+ 3 | import React, { useEffect, useRef, useState } from "react";
+   :                                    ^^^^^^^^
+ 4 | 
+ 5 | export const Navigation: React.FC = () => {
+ 6 |     const ref = useRef<HTMLElement>(null);
+   `----
+
+Import trace for requested module:
+./app/components/nav.tsx
+./app/contact/page.tsx
+[00:31:03.129] Server  ERROR   ⨯ ./app/components/nav.tsx
+Error:   x You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/tianzihao/CodeBuddy/Protofolio/app/components/nav.tsx:3:1]
+ 1 | import { ArrowLeft } from "lucide-react";
+ 2 | import Link from "next/link";
+ 3 | import React, { useEffect, useRef, useState } from "react";
+   :                 ^^^^^^^^^
+ 4 | 
+ 5 | export const Navigation: React.FC = () => {
+ 6 |     const ref = useRef<HTMLElement>(null);
+   `----
+  x You're importing a component that needs `useRef`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/tianzihao/CodeBuddy/Protofolio/app/components/nav.tsx:3:1]
+ 1 | import { ArrowLeft } from "lucide-react";
+ 2 | import Link from "next/link";
+ 3 | import React, { useEffect, useRef, useState } from "react";
+   :                            ^^^^^^
+ 4 | 
+ 5 | export const Navigation: React.FC = () => {
+ 6 |     const ref = useRef<HTMLElement>(null);
+   `----
+  x You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/tianzihao/CodeBuddy/Protofolio/app/components/nav.tsx:3:1]
+ 1 | import { ArrowLeft } from "lucide-react";
+ 2 | import Link from "next/link";
+ 3 | import React, { useEffect, useRef, useState } from "react";
+   :                                    ^^^^^^^^
+ 4 | 
+ 5 | export const Navigation: React.FC = () => {
+ 6 |     const ref = useRef<HTMLElement>(null);
+   `----
+
+Import trace for requested module:
+./app/components/nav.tsx
+./app/contact/page.tsx
+[00:31:03.234] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:31:03.838] Browser ERROR   uncaughtError: ModuleBuildError: Module build failed (from ./node_modules/.pnpm/next@16.1.6_@opentelemetry+api@1.4.1_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   x You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/tianzihao/CodeBuddy/Protofolio/app/components/nav.tsx:3:1]
+ 1 | import { ArrowLeft } from "lucide-react";
+ 2 | import Link from "next/link";
+ 3 | import React, { useEffect, useRef, useState } from "react";
+   :                 ^^^^^^^^^
+ 4 | 
+ 5 | export const Navigation: React.FC = () => {
+ 6 |     const ref = useRef<HTMLElement>(null);
+   `----
+  x You're importing a component that needs `useRef`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/tianzihao/CodeBuddy/Protofolio/app/components/nav.tsx:3:1]
+ 1 | import { ArrowLeft } from "lucide-react";
+ 2 | import Link from "next/link";
+ 3 | import React, { useEffect, useRef, useState } from "react";
+   :                            ^^^^^^
+ 4 | 
+ 5 | export const Navigation: React.FC = () => {
+ 6 |     const ref = useRef<HTMLElement>(null);
+   `----
+  x You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/tianzihao/CodeBuddy/Protofolio/app/components/nav.tsx:3:1]
+ 1 | import { ArrowLeft } from "lucide-react";
+ 2 | import Link from "next/link";
+ 3 | import React, { useEffect, useRef, useState } from "react";
+   :                                    ^^^^^^^^
+ 4 | 
+ 5 | export const Navigation: React.FC = () => {
+ 6 |     const ref = useRef<HTMLElement>(null);
+   `----
+
+[00:31:03.838] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:31:03.838] Browser LOG     [CodeBuddy] electronAPI not available, continuing with postMessage
+[00:31:03.838] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:31:03.946] Browser ERROR   ./app/components/nav.tsx
+Error:   x You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/tianzihao/CodeBuddy/Protofolio/app/components/nav.tsx:3:1]
+ 1 | import { ArrowLeft } from "lucide-react";
+ 2 | import Link from "next/link";
+ 3 | import React, { useEffect, useRef, useState } from "react";
+   :                 ^^^^^^^^^
+ 4 | 
+ 5 | export const Navigation: React.FC = () => {
+ 6 |     const ref = useRef<HTMLElement>(null);
+   `----
+  x You're importing a component that needs `useRef`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/tianzihao/CodeBuddy/Protofolio/app/components/nav.tsx:3:1]
+ 1 | import { ArrowLeft } from "lucide-react";
+ 2 | import Link from "next/link";
+ 3 | import React, { useEffect, useRef, useState } from "react";
+   :                            ^^^^^^
+ 4 | 
+ 5 | export const Navigation: React.FC = () => {
+ 6 |     const ref = useRef<HTMLElement>(null);
+   `----
+  x You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/tianzihao/CodeBuddy/Protofolio/app/components/nav.tsx:3:1]
+ 1 | import { ArrowLeft } from "lucide-react";
+ 2 | import Link from "next/link";
+ 3 | import React, { useEffect, useRef, useState } from "react";
+   :                                    ^^^^^^^^
+ 4 | 
+ 5 | export const Navigation: React.FC = () => {
+ 6 |     const ref = useRef<HTMLElement>(null);
+   `----
+[00:31:07.906] Browser ERROR   uncaughtError: ModuleBuildError: Module build failed (from ./node_modules/.pnpm/next@16.1.6_@opentelemetry+api@1.4.1_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   x You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/tianzihao/CodeBuddy/Protofolio/app/components/nav.tsx:3:1]
+ 1 | import { ArrowLeft } from "lucide-react";
+ 2 | import Link from "next/link";
+ 3 | import React, { useEffect, useRef, useState } from "react";
+   :                 ^^^^^^^^^
+ 4 | 
+ 5 | export const Navigation: React.FC = () => {
+ 6 |     const ref = useRef<HTMLElement>(null);
+   `----
+  x You're importing a component that needs `useRef`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/tianzihao/CodeBuddy/Protofolio/app/components/nav.tsx:3:1]
+ 1 | import { ArrowLeft } from "lucide-react";
+ 2 | import Link from "next/link";
+ 3 | import React, { useEffect, useRef, useState } from "react";
+   :                            ^^^^^^
+ 4 | 
+ 5 | export const Navigation: React.FC = () => {
+ 6 |     const ref = useRef<HTMLElement>(null);
+   `----
+  x You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/tianzihao/CodeBuddy/Protofolio/app/components/nav.tsx:3:1]
+ 1 | import { ArrowLeft } from "lucide-react";
+ 2 | import Link from "next/link";
+ 3 | import React, { useEffect, useRef, useState } from "react";
+   :                                    ^^^^^^^^
+ 4 | 
+ 5 | export const Navigation: React.FC = () => {
+ 6 |     const ref = useRef<HTMLElement>(null);
+   `----
+
+[00:31:07.906] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:31:07.906] Browser LOG     [CodeBuddy] electronAPI not available, continuing with postMessage
+[00:31:07.906] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:31:08.010] Browser ERROR   ./app/components/nav.tsx
+Error:   x You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/tianzihao/CodeBuddy/Protofolio/app/components/nav.tsx:3:1]
+ 1 | import { ArrowLeft } from "lucide-react";
+ 2 | import Link from "next/link";
+ 3 | import React, { useEffect, useRef, useState } from "react";
+   :                 ^^^^^^^^^
+ 4 | 
+ 5 | export const Navigation: React.FC = () => {
+ 6 |     const ref = useRef<HTMLElement>(null);
+   `----
+  x You're importing a component that needs `useRef`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/tianzihao/CodeBuddy/Protofolio/app/components/nav.tsx:3:1]
+ 1 | import { ArrowLeft } from "lucide-react";
+ 2 | import Link from "next/link";
+ 3 | import React, { useEffect, useRef, useState } from "react";
+   :                            ^^^^^^
+ 4 | 
+ 5 | export const Navigation: React.FC = () => {
+ 6 |     const ref = useRef<HTMLElement>(null);
+   `----
+  x You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/tianzihao/CodeBuddy/Protofolio/app/components/nav.tsx:3:1]
+ 1 | import { ArrowLeft } from "lucide-react";
+ 2 | import Link from "next/link";
+ 3 | import React, { useEffect, useRef, useState } from "react";
+   :                                    ^^^^^^^^
+ 4 | 
+ 5 | export const Navigation: React.FC = () => {
+ 6 |     const ref = useRef<HTMLElement>(null);
+   `----
+[00:31:20.550] Browser ERROR   uncaughtError: ModuleBuildError: Module build failed (from ./node_modules/.pnpm/next@16.1.6_@opentelemetry+api@1.4.1_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   x You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/tianzihao/CodeBuddy/Protofolio/app/components/nav.tsx:3:1]
+ 1 | import { ArrowLeft } from "lucide-react";
+ 2 | import Link from "next/link";
+ 3 | import React, { useEffect, useRef, useState } from "react";
+   :                 ^^^^^^^^^
+ 4 | 
+ 5 | export const Navigation: React.FC = () => {
+ 6 |     const ref = useRef<HTMLElement>(null);
+   `----
+  x You're importing a component that needs `useRef`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/tianzihao/CodeBuddy/Protofolio/app/components/nav.tsx:3:1]
+ 1 | import { ArrowLeft } from "lucide-react";
+ 2 | import Link from "next/link";
+ 3 | import React, { useEffect, useRef, useState } from "react";
+   :                            ^^^^^^
+ 4 | 
+ 5 | export const Navigation: React.FC = () => {
+ 6 |     const ref = useRef<HTMLElement>(null);
+   `----
+  x You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/tianzihao/CodeBuddy/Protofolio/app/components/nav.tsx:3:1]
+ 1 | import { ArrowLeft } from "lucide-react";
+ 2 | import Link from "next/link";
+ 3 | import React, { useEffect, useRef, useState } from "react";
+   :                                    ^^^^^^^^
+ 4 | 
+ 5 | export const Navigation: React.FC = () => {
+ 6 |     const ref = useRef<HTMLElement>(null);
+   `----
+
+[00:31:20.550] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:31:20.550] Browser LOG     [CodeBuddy] electronAPI not available, continuing with postMessage
+[00:31:20.652] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:31:20.652] Browser ERROR   ./app/components/nav.tsx
+Error:   x You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/tianzihao/CodeBuddy/Protofolio/app/components/nav.tsx:3:1]
+ 1 | import { ArrowLeft } from "lucide-react";
+ 2 | import Link from "next/link";
+ 3 | import React, { useEffect, useRef, useState } from "react";
+   :                 ^^^^^^^^^
+ 4 | 
+ 5 | export const Navigation: React.FC = () => {
+ 6 |     const ref = useRef<HTMLElement>(null);
+   `----
+  x You're importing a component that needs `useRef`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/tianzihao/CodeBuddy/Protofolio/app/components/nav.tsx:3:1]
+ 1 | import { ArrowLeft } from "lucide-react";
+ 2 | import Link from "next/link";
+ 3 | import React, { useEffect, useRef, useState } from "react";
+   :                            ^^^^^^
+ 4 | 
+ 5 | export const Navigation: React.FC = () => {
+ 6 |     const ref = useRef<HTMLElement>(null);
+   `----
+  x You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/tianzihao/CodeBuddy/Protofolio/app/components/nav.tsx:3:1]
+ 1 | import { ArrowLeft } from "lucide-react";
+ 2 | import Link from "next/link";
+ 3 | import React, { useEffect, useRef, useState } from "react";
+   :                                    ^^^^^^^^
+ 4 | 
+ 5 | export const Navigation: React.FC = () => {
+ 6 |     const ref = useRef<HTMLElement>(null);
+   `----
+[00:31:49.097] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:31:49.645] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:31:49.773] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:31:50.575] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:31:50.618] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:31:51.352] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:31:51.465] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:31:51.465] Browser LOG     [CodeBuddy] electronAPI not available, continuing with postMessage
+[00:31:51.465] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:32:00.265] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:32:05.280] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:33:36.589] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:33:41.489] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:33:48.484] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:33:59.820] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:34:01.230] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:34:15.445] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:34:19.130] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:34:43.042] Browser LOG     [CodeBuddy] Early error capture script injected
+[00:34:50.359] Browser LOG     [CodeBuddy] Early error capture script injected

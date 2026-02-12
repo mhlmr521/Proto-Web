@@ -1,0 +1,30 @@
+{
+  "version": 3,
+  "middleware": {},
+  "functions": {
+    "/api/incr": {
+      "files": [
+        "server/edge-runtime-webpack.js",
+        "server/pages/api/incr.js"
+      ],
+      "name": "pages/api/incr",
+      "page": "/api/incr",
+      "matchers": [
+        {
+          "regexp": "^/api/incr$",
+          "originalSource": "/api/incr"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "aT31iAnxr1y2AGYqVEhhs",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "klqnLBWnRdDTe7JjMVWRwhwcs3Vh0mLmVlB+b8tSQ5M=",
+        "__NEXT_PREVIEW_MODE_ID": "2a5b27003813e4d9cd73c1dc1ff4b73d",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "967bafcc5a92d0ae565dd34ab8321f90dc5ff36fe52d5aeb4af93e737811c1ab",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "f382dac8dc7828929de703bce3db6f641094885cec2223b41c8c2529f0b3e908"
+      }
+    }
+  },
+  "sortedMiddleware": []
+}
