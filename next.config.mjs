@@ -6,6 +6,8 @@ const nextConfig = {
 	experimental: {
 		mdxRs: true,
 	},
+	// 添加Turbopack配置解决警告
+	turbopack: {},
 	// 添加配置解决警告
 	outputFileTracingRoot: process.cwd(),
 	// 启用standalone输出用于Docker部署
