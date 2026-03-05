@@ -3,15 +3,13 @@
 import { useState, useEffect } from 'react';
 import '../editor.css';
 import { useRouter, useSearchParams } from 'next/navigation';
-import { useEditor, EditorContent } from '@tiptap/react';
+import { useEditor, EditorContent as TiptapEditor } from '@tiptap/react';
 import StarterKit from '@tiptap/starter-kit';
 import Link from '@tiptap/extension-link';
 import Image from '@tiptap/extension-image';
 import CodeBlockLowlight from '@tiptap/extension-code-block-lowlight';
-import { lowlight } from 'lowlight';
+import { createLowlight } from 'lowlight';
 import { useForm } from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
-import { z } from 'zod';
 import { 
   Bold, 
   Italic, 
@@ -31,21 +29,21 @@ import {
 import NextLink from 'next/link';
 import { AuthProvider, ProtectedRoute } from '../../../components/AuthProvider';
 
-// 表单验证模式
-const projectSchema = z.object({
-  title: z.string().min(1, '标题不能为空'),
-  description: z.string().min(1, '描述不能为空'),
-  url: z.string().url('请输入有效的URL').optional().or(z.literal('')),
-  repository: z.string().optional(),
-  published: z.boolean(),
-});
+interface ProjectFormData {
+  title: string;
+  description: string;
+  url?: string;
+  repository?: string;
+  published: boolean;
+}
 
-type ProjectFormData = z.infer<typeof projectSchema>;
+// 创建 lowlight 实例
+const lowlight = createLowlight();
 
 function EditorContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const slug = searchParams.get('slug');
+  const slug = searchParams?.get('slug');
   const isEditing = !!slug;
 
   const [content, setContent] = useState('');
@@ -59,7 +57,6 @@ function EditorContent() {
     watch,
     formState: { errors }
   } = useForm<ProjectFormData>({
-    resolver: zodResolver(projectSchema),
     defaultValues: {
       title: '',
       description: '',
@@ -189,7 +186,7 @@ function EditorContent() {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-gray-900 mx-auto"></div>
+          <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-gray-900 mx-auto" />
           <p className="mt-4 text-gray-600">加载中...</p>
         </div>
       </div>
@@ -268,13 +265,13 @@ function EditorContent() {
 
                   <div className="col-span-6 sm:col-span-3">
                     <label className="block text-sm font-medium text-gray-700">
-                      项目URL
+                      外部链接 <span className="text-gray-400 font-normal">(选填，留空则自动生成)</span>
                     </label>
                     <input
                       type="url"
                       {...register('url')}
                       className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
-                      placeholder="https://example.com"
+                      placeholder="留空自动生成，或填写外部链接如 https://example.com"
                     />
                     {errors.url && (
                       <p className="mt-1 text-sm text-red-600">{errors.url.message}</p>
@@ -350,7 +347,7 @@ function EditorContent() {
                     <Code className="w-4 h-4" />
                   </ToolbarButton>
 
-                  <div className="w-px h-6 bg-gray-300 mx-1"></div>
+                  <div className="w-px h-6 bg-gray-300 mx-1" />
 
                   <ToolbarButton
                     onClick={() => editor.chain().focus().toggleHeading({ level: 1 }).run()}
@@ -376,7 +373,7 @@ function EditorContent() {
                     <Heading3 className="w-4 h-4" />
                   </ToolbarButton>
 
-                  <div className="w-px h-6 bg-gray-300 mx-1"></div>
+                  <div className="w-px h-6 bg-gray-300 mx-1" />
 
                   <ToolbarButton
                     onClick={() => editor.chain().focus().toggleBulletList().run()}
@@ -402,7 +399,7 @@ function EditorContent() {
                     <Quote className="w-4 h-4" />
                   </ToolbarButton>
 
-                  <div className="w-px h-6 bg-gray-300 mx-1"></div>
+                  <div className="w-px h-6 bg-gray-300 mx-1" />
 
                   <ToolbarButton
                     onClick={() => {
@@ -433,7 +430,7 @@ function EditorContent() {
 
               {/* 编辑器 */}
               <div className="border border-gray-300 border-t-0 rounded-b-md">
-                <EditorContent editor={editor} />
+                <TiptapEditor editor={editor} />
               </div>
             </div>
           </div>

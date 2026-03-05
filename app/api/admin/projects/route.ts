@@ -62,13 +62,16 @@ export async function POST(request: NextRequest) {
       .replace(/-+/g, '-')
       .replace(/^-|-$/g, '');
 
+    // 自动生成项目页面URL（如果用户没有手动填写外部链接）
+    const autoUrl = url || `/projects/${slug}`;
+
     // 构建MDX内容
     const frontmatter = {
       title,
       description,
       date,
       published,
-      ...(url && { url }),
+      url: autoUrl,
       ...(repository && { repository }),
     };
 

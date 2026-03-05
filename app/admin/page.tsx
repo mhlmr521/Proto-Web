@@ -62,7 +62,7 @@ function AdminContent() {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-gray-900 mx-auto"></div>
+          <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-gray-900 mx-auto" />
           <p className="mt-4 text-gray-600">加载中...</p>
         </div>
       </div>
@@ -99,6 +99,7 @@ function AdminContent() {
                 查看网站
               </Link>
               <button
+                type="button"
                 onClick={logout}
                 className="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
               >
@@ -167,6 +168,7 @@ function AdminContent() {
                           <Edit className="w-4 h-4" />
                         </Link>
                         <button
+                          type="button"
                           onClick={() => deleteProject(project.slug)}
                           className="text-red-600 hover:text-red-900 p-1"
                           title="删除"

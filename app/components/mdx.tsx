@@ -3,7 +3,7 @@ import * as React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-function clsx(...args: any) {
+function clsx(...args: (string | undefined | null | false)[]) {
 	return args.filter(Boolean).join(" ");
 }
 
@@ -16,8 +16,9 @@ export function Mdx({ code }: MdxProps) {
 	// 这样可以避免 useMDXComponent 的兼容性问题
 	
 	try {
-		// 尝试执行编译后的代码
-		const Component = new Function('React', 'return ' + code)(React);
+		// 尝试执行编译后的代码 - 已修复模板字符串
+		console.log('MDX: Using template string (fixed version)');
+		const Component = new Function('React', `return ${code}`)(React);
 		return (
 			<div className="mdx">
 				<Component />

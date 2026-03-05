@@ -36,13 +36,13 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       } else {
         setUser(null);
         // 如果在管理页面但未登录，重定向到登录页
-        if (pathname.startsWith('/admin') && pathname !== '/admin/login') {
+        if (pathname?.startsWith('/admin') && pathname !== '/admin/login') {
           router.push('/admin/login');
         }
       }
     } catch (error) {
       setUser(null);
-      if (pathname.startsWith('/admin') && pathname !== '/admin/login') {
+      if (pathname?.startsWith('/admin') && pathname !== '/admin/login') {
         router.push('/admin/login');
       }
     } finally {
@@ -111,7 +111,7 @@ export function ProtectedRoute({ children }: { children: React.ReactNode }) {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-gray-900 mx-auto"></div>
+          <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-gray-900 mx-auto" />
           <p className="mt-4 text-gray-600">验证身份中...</p>
         </div>
       </div>

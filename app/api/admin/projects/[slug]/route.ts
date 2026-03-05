@@ -9,13 +9,13 @@ const CONTENT_DIR = path.join(process.cwd(), 'content', 'projects');
 // 获取单个项目
 export async function GET(
   request: NextRequest,
-  { params }: { params: { slug: string } }
+  { params }: { params: Promise<{ slug: string }> }
 ) {
   try {
     // 验证身份
     requireAuth(request);
     
-    const { slug } = params;
+    const { slug } = await params;
     const filePath = path.join(CONTENT_DIR, `${slug}.mdx`);
     
     const fileContent = await fs.readFile(filePath, 'utf8');
@@ -43,13 +43,13 @@ export async function GET(
 // 更新项目
 export async function PUT(
   request: NextRequest,
-  { params }: { params: { slug: string } }
+  { params }: { params: Promise<{ slug: string }> }
 ) {
   try {
     // 验证身份
     requireAuth(request);
     
-    const { slug } = params;
+    const { slug } = await params;
     const data = await request.json();
     const { title, description, content, url, repository, published, date } = data;
 
@@ -85,13 +85,13 @@ export async function PUT(
 // 删除项目
 export async function DELETE(
   request: NextRequest,
-  { params }: { params: { slug: string } }
+  { params }: { params: Promise<{ slug: string }> }
 ) {
   try {
     // 验证身份
     requireAuth(request);
     
-    const { slug } = params;
+    const { slug } = await params;
     const filePath = path.join(CONTENT_DIR, `${slug}.mdx`);
     
     await fs.unlink(filePath);

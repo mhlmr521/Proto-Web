@@ -9,7 +9,7 @@ export function verifyToken(request: NextRequest) {
       return null;
     }
 
-    const decoded = jwt.verify(token, process.env.JWT_SECRET || 'fallback-secret') as any;
+    const decoded = jwt.verify(token, process.env.JWT_SECRET || 'fallback-secret') as jwt.JwtPayload;
     return decoded;
   } catch (error) {
     return null;
